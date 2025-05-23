@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roma - Bebidas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="styles.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top" role="navigation" aria-label="Menú principal">
+
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="assets/imgs/logo.png" alt="Roma Pizza" width="80" height="80" class="me-2">
+      <span style="color: var(--color-rojo-roma); font-weight: bold;">Roma Pizza</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+         <li class="nav-item"><a class="nav-link btn text-white ms-2" style="background-color: var(--color-rojo-roma);" href="#menu">Menú</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cuenta">Mi Cuenta</a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-cart-fill"></i> Carrito</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="menu" class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="mb-4 fw-bold" style="color: var(--color-rojo-roma);">Nuestro Menú</h2>
+
+    <!-- Botones de filtro -->
+    <div class="mb-4">
+      <button class="btn btn-outline-success me-2 filter-btn" data-category="pizza">Pizzas</button>
+      <button class="btn btn-outline-success me-2 filter-btn active" data-category="bebida">Bebidas</button>
+      <button class="btn btn-outline-success filter-btn" data-category="promo">Promociones</button>
+    </div>
+
+    <!-- Cards del menú -->
+    <div class="row" id="menu-items">
+
+      <!-- CARD 1 -->
+    
+      <div class="col-md-6 col-lg-3 mb-4 menu-card" data-category="bebida">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/imgs/cocacola-zero-1l-300x300.webp" class="card-img-top" alt="Refresco">
+          <div class="card-body">
+            <h5 class="card-title">Gaseosas</h5>
+            <p class="card-text">Botella 500ml. Varios sabores.</p>
+            <select class="form-select mb-2">
+              <option selected>Seleccionar sabor</option>
+              <option value="cola">Cola</option>
+              <option value="naranja">Naranja</option>
+              <option value="limon">Limón</option>
+            </select>
+            <button class="btn btn-roma w-100">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-md-6 col-lg-3 mb-4 menu-card" data-category="promo">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/imgs/limonadas.jpg" class="card-img-top" alt="Combo Familiar">
+          <div class="card-body">
+            <h5 class="card-title">Limonadas</h5>
+            <p class="card-text">300ml. Varios sabores.</p>
+            <select class="form-select mb-2">
+              <option selected>Seleccionar sabor</option>
+              <option value="coco">Coco</option>
+              <option value="cerezada">cereza</option>
+              <option value="limon">Limón</option>
+            </select>
+            <button class="btn btn-roma w-100">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="col-md-6 col-lg-3 mb-4 menu-card" data-category="pizza">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/imgs/jugos en leche.jpg" class="card-img-top" alt="Pizza Hawaiana">
+          <div class="card-body">
+            <h5 class="card-title">Jugos</h5>
+            <p class="card-text">Jugos de frutas.</p>
+            <select class="form-select mb-2">
+              <option selected>Seleccionar sabor</option>
+              <option value="p">guanabana</option>
+              <option value="m">Papaya</option>
+              <option value="f">piña</option>
+            </select>
+            <button class="btn btn-roma w-100">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="col-md-6 col-lg-3 mb-4 menu-card" data-category="bebida">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/imgs/ME00047.png" class="card-img-top" alt="Agua Mineral">
+          <div class="card-body">
+            <h5 class="card-title">Agua Mineral</h5>
+            <span>sin sabor</span>
+              <select class="form-select mb-2">
+              <option value="p">con gas 250ml</option>
+              <option value="m">sin gas 250ml</option>
+              <option value="f">sin gas 1 litro</option>
+              </select>
+            <button class="btn btn-roma w-100 mt-3">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 7 -->
+      <div class="col-md-6 col-lg-3 mb-4 menu-card" data-category="promo">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/imgs/cerveza Nacional.jpg" class="card-img-top" alt="Promo Pareja">
+          <div class="card-body">
+            <h5 class="card-title">cervezas 300ml</h5>
+              <select class="form-select mb-2">
+              <option value="p">Andina</option>
+              <option value="m">Aguila</option>
+              <option value="f">Poker</option>
+              </select>
+            <button class="btn btn-roma w-100 mt-3">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 8 -->
+      <div class="col-md-6 col-lg-3 mb-4 menu-card" data-category="pizza">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/imgs/PRODUCTOS-SITIO-WEB_46.png" class="card-img-top" alt="Pizza Vegetariana">
+          <div class="card-body">
+            <h5 class="card-title">Hatsun</h5>
+            
+            <select class="form-select mb-2">
+              <option selected>Seleccionar sabor</option>
+              <option value="p">Fresa</option>
+              <option value="m">Tea. Verde</option>
+              <option value="f">Tea. Blanco</option>
+            </select>
+            <button class="btn btn-roma w-100">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<footer class="footer bg-dark text-white pt-3 pb-2">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <!-- Ubicación -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase fw-bold mb-3">Ubicación</h5>
+        <p><i class="bi bi-geo-alt-fill me-2"></i>Calle Falsa 123, Bogotá</p>
+        <p><i class="bi bi-clock-fill me-2"></i>Lun-Dom 12:00pm - 11:00pm</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127261.45956317957!2d-74.32479040273435!3d4.608232900000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9f2ddbc6c50f%3A0xb0f670f03c2bb1af!2sRoma&#39;s%20Pizza!5e0!3m2!1ses!2sus!4v1748010810131!5m2!1ses!2sus" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy title="Mapa Roma Pizza"" ></iframe>
+      </div>
+
+      <!-- Contacto -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase fw-bold mb-3">Contacto</h5>
+        <p><i class="bi bi-envelope-fill me-2"></i>contacto@romapizza.com</p>
+        <p><i class="bi bi-telephone-fill me-2"></i>+52 55 1234 5678</p>
+        <a href="https://wa.me/5215512345678?text=Hola%20quiero%20hacer%20un%20pedido" class="btn btn-success w-100 mt-2">
+          <i class="bi bi-whatsapp me-2"></i>WhatsApp
+        </a>
+      </div>
+
+      <!-- Enlaces útiles -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase fw-bold mb-3">Nosotros</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Términos y condiciones</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Política de privacidad</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Redes sociales</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="border-top border-light" />
+
+    <div class="text-center">
+      <p class="mb-0">&copy; 2025 <span class="fw-bold">Roma Pizza</span>. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="app"></script>
+</body>
+</html>

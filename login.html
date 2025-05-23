@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roma Pizza - Iniciar Sesión</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-rojo-roma: #ED1E24;
+      --color-verde-roma: #2E7D32;
+    }
+
+    form .form-control {
+      padding: 0.75rem;
+      font-size: 1rem;
+    }
+
+    .btn-outline-danger i,
+    .btn-outline-primary i {
+      font-size: 1.2rem;
+      vertical-align: middle;
+    }
+
+    .auth-container {
+      margin-top: 4rem;
+      max-width: 500px;
+    }
+    /* Sombra en navbar al hacer scroll */
+   .navbar {
+     transition: box-shadow 0.3s;
+     }
+
+    .nav-tabs .nav-link {
+      font-weight: 500;
+      color: #c92323;
+      border-radius: 3px;
+    }
+
+    .nav-tabs .nav-link.active {
+      background-color: var(--color-rojo-roma);
+      color: white;
+      border-color: transparent;
+    }
+
+    @media (max-width: 576px) {
+      .auth-container {
+        padding: 1rem;
+      }
+
+      .btn-outline-danger,
+      .btn-outline-primary {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="assets/imgs/logo.png" alt="Roma Pizza" width="40" height="40" class="me-2">
+      <span style="color: var(--color-rojo-roma); font-weight: bold;">Roma Pizza</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+        <li class="nav-item"><a class="nav-link active  text-white ms-2" style="background-color: var(--color-rojo-roma);" href="#">Mi Cuenta</a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-cart-fill"></i> Carrito</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Formulario Login / Registro -->
+<div class="container auth-container">
+  <ul class="nav nav-tabs mb-4 justify-content-center" id="authTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab">Iniciar sesión</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab">Registrarse</button>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <!-- Login -->
+    <div class="tab-pane fade show active" id="login" role="tabpanel">
+      <form>
+        <div class="mb-3">
+          <label class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Contraseña</label>
+          <input type="password" class="form-control" required>
+        </div>
+        <div class="mb-3 text-end">
+          <a href="#">¿Olvidaste tu contraseña?</a>
+        </div>
+        <button type="submit" class="btn btn-roma w-100 mb-3">Ingresar</button>
+        <div class="text-center text-muted">o continúa con</div>
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="btn btn-outline-danger w-50"><i class="bi bi-google"></i> Google</a>
+          <a href="#" class="btn btn-outline-primary w-50"><i class="bi bi-facebook"></i> Facebook</a>
+        </div>
+      </form>
+    </div>
+
+    <!-- Registro -->
+    <div class="tab-pane fade" id="register" role="tabpanel">
+      <form>
+        <div class="mb-3">
+          <label class="form-label">Nombre completo</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Contraseña</label>
+          <input type="password" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-roma w-100">Registrarse</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white pt-3 pb-2 mt-5">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase fw-bold mb-3">Ubicación</h5>
+        <p><i class="bi bi-geo-alt-fill me-2"></i>Calle Falsa 123, Bogotá</p>
+        <p><i class="bi bi-clock-fill me-2"></i>Lun-Dom 12:00pm - 11:00pm</p>
+        <iframe src="https://www.google.com/maps/embed?pb=..." width="300" height="150" style="border:0;" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase fw-bold mb-3">Contacto</h5>
+        <p><i class="bi bi-envelope-fill me-2"></i>contacto@romapizza.com</p>
+        <p><i class="bi bi-telephone-fill me-2"></i>+52 55 1234 5678</p>
+        <a href="https://wa.me/5215512345678" class="btn btn-success w-100 mt-2"><i class="bi bi-whatsapp me-2"></i>WhatsApp</a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase fw-bold mb-3">Nosotros</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Términos y condiciones</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Política de privacidad</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Redes sociales</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-top border-light" />
+    <div class="text-center">
+      <p class="mb-0">&copy; 2025 <span class="fw-bold">Roma Pizza</span>. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

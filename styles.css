@@ -1,0 +1,106 @@
+:root {
+  --color-rojo-roma: #ED1E24;
+  --color-verde-roma: #2E7D32;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+/* Sombra en navbar al hacer scroll */
+.navbar {
+  transition: box-shadow 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #f8f9fa; /* opcional para resaltar el fondo */
+  transition: all 0.3s ease;
+}
+
+
+.hero {
+  background: url('assets/imgs/hero2.jpg') center/cover no-repeat;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  color:#212529;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .lead{
+  color: #ffffff;
+  background-color:#2E7D32;
+  font-size: 1.5rem;
+  margin-bottom: 1rem
+}
+
+.btn-roma {
+  background-color: var(--color-rojo-roma);
+  color: white;
+}
+
+.btn-roma:hover {
+  background-color: darkred;
+  color: white;
+}
+.footer {
+  padding-top: 2rem;  /* antes: pt-5 (5rem) */
+  padding-bottom: 1rem;  /* antes: pb-4 (4rem) */
+  font-size: 0.9rem;
+  background-color: #1e1e1e;
+}
+
+.footer h5 {
+  margin-bottom: 1rem; /* antes: mb-3 */
+  font-size: 1rem;
+}
+
+.footer p, .footer a, .footer li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.footer iframe {
+  height: 100px;  /* antes: 150px */
+}
+
+.card-img-top {
+  width: 100%;       /* que ocupe todo el ancho de la card */
+  height: 200px;     /* altura fija, puedes cambiarla según prefieras */
+  object-fit: cover; /* recorta la imagen para que se ajuste sin deformarse */
+}
+
+/* Estilo para botón principal Roma Pizza */
+.btn-roma {
+  background-color: var(--color-rojo-roma);
+  color: white;
+  border: none;
+}
+
+.btn-roma:hover {
+  background-color: darkred;
+  color: white;
+}
+
+
+.promo-section {
+  background: #f8f9fa;
+}
+
+.btn-roma {
+  background-color: var(--color-rojo-roma);
+  color: white;
+  border: none;
+}
+
+.btn-roma:hover {
+  background-color: darkred;
+}
+.card-img-top {
+  height: 350px; /* o 300px, ajusta a tu gusto */
+  object-fit: cover;
+}
