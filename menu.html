@@ -17,7 +17,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top" role="navigation" aria-label="Menú principal">
 
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="#">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
       <img src="assets/imgs/logo.png" alt="Roma Pizza" width="80" height="80" class="me-2">
       <span style="color: var(--color-rojo-roma); font-weight: bold;">Roma Pizza</span>
     </a>
@@ -40,12 +40,23 @@
   <div class="container">
     <h2 class="mb-4 fw-bold" style="color: var(--color-rojo-roma);">Nuestro Menú</h2>
 
-    <!-- Botones de filtro -->
-    <div class="mb-4">
-      <button class="btn btn-outline-success me-2 filter-btn active" data-category="pizza">Pizzas</button>
-      <button class="btn btn-outline-success me-2 filter-btn" data-category="bebida">Bebidas</button>
-      <button class="btn btn-outline-success filter-btn" data-category="promo">Promociones</button>
+  <!-- Botones de filtro -->
+<section id="menu" class="py-5 bg-light text-center">
+  <div class="container">
+    <div class="mb-2 d-flex justify-content-center flex-wrap gap-2">
+      <a href="menu.html">
+        <button class="btn btn-outline-success filter-btn" data-category="pizza">Pizzas</button>
+      </a>
+      <a href="bebidas.html">
+        <button class="btn btn-outline-success filter-btn" data-category="bebida">Bebidas</button>
+      </a>
+      <a href="promos.html">
+        <button class="btn btn-outline-success filter-btn active" data-category="promo">Promociones</button>
+      </a>
     </div>
+  </div>
+</section>
+
 
     <!-- Cards del menú -->
     <div class="row" id="menu-items">
