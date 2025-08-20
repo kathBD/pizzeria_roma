@@ -13,3 +13,4 @@ RF-08	|Inicio de Sesión	|Funcional	|Permite a usuarios registrados iniciar sesi
 RF-09	|Contacto por WhatsApp|	Funcional|	Botón flotante que abre WhatsApp Web con mensaje predeterminado.|
 
 
+<img width="1883" height="888" alt="image" src="https://github.com/user-attachments/assets/4a25429a-7e7b-42c0-bb26-5185d419c206" />
